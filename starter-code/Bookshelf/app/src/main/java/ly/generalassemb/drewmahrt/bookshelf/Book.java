@@ -6,10 +6,17 @@ package ly.generalassemb.drewmahrt.bookshelf;
 public class Book {
     private String mTitle;
     private String mAuthor;
+    private String mDetails;
 
     public Book(String title,String author){
         mTitle = title;
         mAuthor = author;
+    }
+
+    public Book(String title, String author, String details){
+        mTitle = title;
+        mAuthor = author;
+        mDetails = details;
     }
 
     public String getTitle() {
@@ -18,6 +25,10 @@ public class Book {
 
     public String getAuthor() {
         return mAuthor;
+    }
+
+    public String getDetails(){
+        return mDetails;
     }
 
 }
